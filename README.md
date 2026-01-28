@@ -42,13 +42,13 @@ This project demonstrates a robust **API-First Architecture**. The mobile app is
 ```mermaid
 graph LR
     A[Mobile App] -->|1. Login Creds| B[Auth API]
-    B -->|2. Returns JWT & User| A
+    B -->|2. Returns JWT and User| A
     A -->|3. Get Dashboard| C[Video API]
-    C -->|4. Returns Video List (No YouTube IDs)| A
+    C -->|4. Returns Video List - No YouTube IDs| A
     A -->|5. Request Playback| C
-    C -->|6. Signs Token & Returns Secure URL| A
+    C -->|6. Signs Token and Returns Secure URL| A
     A -->|7. Load Stream URL in WebView| D[Video Player Endpoint]
-    D -->|8. Validates Token & Injects Embed| A
+    D -->|8. Validates Token and Injects Embed| A
 ```
 
 ---
