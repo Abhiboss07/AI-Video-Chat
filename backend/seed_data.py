@@ -16,10 +16,10 @@ def seed_videos():
             'thumbnail_url': 'https://img.youtube.com/vi/gvkqT_Uoahw/hqdefault.jpg'
         },
         {
-            'title': 'Flask in 100 Seconds',
-            'description': 'Quick introduction to Flask by Fireship.',
-            'youtube_id': 'qrJHGDUNFco',
-            'thumbnail_url': 'https://img.youtube.com/vi/qrJHGDUNFco/hqdefault.jpg'
+            'title': 'Big Buck Bunny (Test)',
+            'description': 'Reliable test video to verify playback.',
+            'youtube_id': 'aqz-KE-bpKQ',
+            'thumbnail_url': 'https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg'
         },
         {
             'title': 'Big Buck Bunny',
