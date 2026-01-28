@@ -21,7 +21,6 @@ def dashboard():
         return jsonify({'error': 'Failed to fetch videos'}), 500
 
 @video_bp.route('/<video_id>/stream', methods=['GET'])
-@jwt_required_custom
 def get_video_stream(video_id):
     """Get secure video stream with token validation"""
     try:

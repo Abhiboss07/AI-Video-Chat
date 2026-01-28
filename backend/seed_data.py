@@ -10,32 +10,32 @@ def seed_videos():
     
     sample_videos = [
         {
-            'title': 'Introduction to React Native',
-            'description': 'Learn the basics of building mobile apps with React Native',
-            'youtube_id': '0-S5a0Be2F4',
-            'thumbnail_url': 'https://img.youtube.com/vi/0-S5a0Be2F4/hqdefault.jpg'
+            'title': 'React Native in 100 Seconds',
+            'description': 'Quick introduction to React Native by Fireship.',
+            'youtube_id': 'gvkqT_Uoahw',
+            'thumbnail_url': 'https://img.youtube.com/vi/gvkqT_Uoahw/hqdefault.jpg'
         },
         {
-            'title': 'Flask API Development',
-            'description': 'Building RESTful APIs with Flask and Python',
-            'youtube_id': 'FSPRvFdiB_c',
-            'thumbnail_url': 'https://img.youtube.com/vi/FSPRvFdiB_c/hqdefault.jpg'
+            'title': 'Flask in 100 Seconds',
+            'description': 'Quick introduction to Flask by Fireship.',
+            'youtube_id': 'qrJHGDUNFco',
+            'thumbnail_url': 'https://img.youtube.com/vi/qrJHGDUNFco/hqdefault.jpg'
         },
         {
-            'title': 'MongoDB Database Design',
-            'description': 'Best practices for designing MongoDB schemas',
+            'title': 'Big Buck Bunny',
+            'description': 'The classic open source test video.',
+            'youtube_id': 'aqz-KE-bpKQ',
+            'thumbnail_url': 'https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg'
+        },
+        {
+            'title': 'MongoDB Explained',
+            'description': 'What is MongoDB? (Official Video)',
             'youtube_id': 'pWbMrx5rV9w',
             'thumbnail_url': 'https://img.youtube.com/vi/pWbMrx5rV9w/hqdefault.jpg'
         },
         {
-            'title': 'JWT Authentication Explained',
-            'description': 'Understanding JSON Web Tokens and secure authentication',
-            'youtube_id': '926YEknB8O0',
-            'thumbnail_url': 'https://img.youtube.com/vi/926YEknB8O0/hqdefault.jpg'
-        },
-        {
-            'title': 'Mobile App Security',
-            'description': 'Security best practices for mobile applications',
+            'title': 'Mobile App Architecture',
+            'description': 'Designing mobile apps for scale.',
             'youtube_id': 'inWWhr5tnEA',
             'thumbnail_url': 'https://img.youtube.com/vi/inWWhr5tnEA/hqdefault.jpg'
         }
