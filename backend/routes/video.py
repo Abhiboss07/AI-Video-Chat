@@ -69,7 +69,11 @@ def get_video_stream(video_id):
         </html>
         """
         
-        return html_content, 200, {'Content-Type': 'text/html'}
+        return html_content, 200, {
+            'Content-Type': 'text/html',
+            'X-Frame-Options': 'ALLOWALL',  # Allow embedding
+            'Content-Security-Policy': "frame-ancestors *;" # For modern browsers
+        }
         
     except Exception as e:
         return jsonify({'error': 'Failed to get video stream'}), 500

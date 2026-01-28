@@ -48,6 +48,7 @@ def signup():
 def login():
     try:
         data = request.get_json()
+        print(f"DEBUG: Login Request Payload: {data}")
         
         if not data or not all(k in data for k in ('email', 'password')):
             return jsonify({'error': 'Missing email or password'}), 400
@@ -58,10 +59,13 @@ def login():
         # Find user
         user_data = User.find_by_email(email)
         if not user_data:
+            print(f"DEBUG: Login failed - User not found: {email}")
             return jsonify({'error': 'Invalid credentials'}), 401
             
         # Verify password
         if not User.verify_password(password, user_data['password_hash']):
+            print(f"DEBUG: Login failed - Password mismatch for {email}")
+            print(f"DEBUG: Input: '{password}'")
             return jsonify({'error': 'Invalid credentials'}), 401
             
         # Create access token
